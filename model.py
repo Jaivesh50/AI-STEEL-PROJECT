@@ -3,11 +3,6 @@
 
 # <a href="https://colab.research.google.com/github/Jaivesh50/AI-STEEL-PROJECT/blob/main/Untitled1.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-# In[ ]:
-
-
-# CELL 1: Setup on Colab
-
 import kagglehub
 path = kagglehub.dataset_download("kaustubhdikshit/neu-surface-defect-database")
 print("Dataset path:", path)
@@ -19,9 +14,6 @@ for root, dirs, files in os.walk(path):
         print("Data root:", root)
         print("Folders:", dirs)
         break
-
-
-# In[ ]:
 
 
 import os, shutil, random
@@ -336,12 +328,10 @@ plt.tight_layout()
 plt.savefig("confusion_matrix.png", dpi=150)
 plt.show()
 
-
-# In[ ]:
+x
 
 
 import os
-
 def get_filenames(directory):
     names = set()
     for root, _, files in os.walk(directory):
